@@ -1,11 +1,14 @@
 *{box-sizing: border-box;}
+body{
+	background: #f1f1f1;
+}
 
 /*  Helpers  */
 .pull-left{float: left;}
 .pull-right{float: right;}
 
 
-#main-stage{width:75%; background: #f1f1f1; border: 1px solid #ccc; color: #333;}
+#main-stage{width:75%; background: #fff; border: 1px solid #ccc; color: #333;}
 #info-console{width:25%; background: #666; border: 1px solid #ccc; color: #fff;}
 
 .row{
@@ -16,4 +19,19 @@
 	border: 1px solid #ccc;
 	float: left;
 	height: 100%;
+}
+.box img:not(.qw){
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box img.qw{
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.selected{
+	border-color: red;
 }
