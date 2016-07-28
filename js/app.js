@@ -109,6 +109,9 @@ gameInit = function() {
 };
 gameInit.prototype = {
 	constructor: gameInit,
+
+	// init method should be re-factored
+
 	initUI: function(beeArray, waspArray){
 		var id = 0
 			nr = new beeObject().capacity;
@@ -167,7 +170,7 @@ gameInit.prototype = {
 				return;	
 			}
 
-			// CASE : deselect bee
+			// CASE : user deselect bee
 			if(id1 === id2) {
 				action.deselect(id1);
 				this.clearSelection();
@@ -177,7 +180,7 @@ gameInit.prototype = {
 			    	action.move(id1, id2);
     				this.clearSelection();
 			    }
-			    // CASE : user attacks wasp
+			    // CASE : user selects different bee or attacks wasp
 			    else {
 			    	// CASE : user selects different bee
 			    	if(hasClass(document.getElementById(id2), 'bee')){

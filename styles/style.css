@@ -4,9 +4,7 @@ body{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-h1{
-	text-align: center;
-}
+h1{text-align: center;}
 
 /*  Helpers  */
 .pull-left{float: left;}
@@ -14,6 +12,7 @@ h1{
 
 
 #main-stage{width:75%; background: #fff; border: 1px solid #ccc; color: #333;}
+/* INFO CONSOLE STYLES */
 #info-console{
 	width:25%;
 	background: #2c3e50; 
@@ -58,6 +57,7 @@ h1{
 	padding: 15px;
 }
 
+/* GRID STYLES */
 .row{
 	width: 100%;
 	float: left;
