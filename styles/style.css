@@ -1,6 +1,11 @@
 *{box-sizing: border-box;}
 body{
-	background: #f1f1f1;
+	background: #95a5a6;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1{
+	text-align: center;
 }
 
 /*  Helpers  */
@@ -9,7 +14,49 @@ body{
 
 
 #main-stage{width:75%; background: #fff; border: 1px solid #ccc; color: #333;}
-#info-console{width:25%; background: #666; border: 1px solid #ccc; color: #fff;}
+#info-console{
+	width:25%;
+	background: #2c3e50; 
+	border: 1px solid #ccc; 
+	color: #fff;
+	padding: 0 25px;
+	position: relative;
+}
+#info, #info2 {
+	font-size: 20px;
+    min-height: 266px;
+}
+#info img, #info2 img{
+	width: 100px;
+	margin: 15px auto;
+}
+.damage{
+    background: #27ae60;
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6px;
+    display: block;
+    width: auto;
+    margin: 10px auto;
+}
+#warning {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	background: #c0392b;
+	border-radius: 4px;
+	text-align: center;
+	transition: ease-in-out all 200ms;
+	width: 90%;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+#warning span{
+	display: block;
+	padding: 15px;
+}
 
 .row{
 	width: 100%;
@@ -19,6 +66,7 @@ body{
 	border: 1px solid #ccc;
 	float: left;
 	height: 100%;
+	position: relative;
 }
 .box img:not(.qw){
     width: 100%;
@@ -35,3 +83,5 @@ body{
 .selected{
 	border-color: red;
 }
+
+
