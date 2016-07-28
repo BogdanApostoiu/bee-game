@@ -90,7 +90,6 @@ function swarmGenerator() {
 	for(i = 0; i < q; i++) {
 		a = new beeObject().queen;
 		swarm.push(a);
-		a = {};
 	}
 
 	for(i = 0; i < g; i++) {
@@ -110,7 +109,7 @@ gameInit = function() {
 gameInit.prototype = {
 	constructor: gameInit,
 
-	// init method should be re-factored
+	// TO DO : init method should be re-factored
 
 	initUI: function(beeArray, waspArray){
 		var id = 0
